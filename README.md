@@ -4,6 +4,13 @@
 #### Acesso para o terminal para mongodb (precisa do servidor mongodb instalado): https://www.mongodb.com/try/download/shell
 #### Interface grafica para mongodb (precisa do servidor mongodb instalado): https://www.mongodb.com/products/tools/compass
 
+---
+
+Site 1 com cheat seets: https://quickref.me/mongodb
+Site 2 com cheat seets: https://cheatsheets.zip/mongodb
+
+---
+
 ### Anotações:
 
 Comando antigo para rodar mongodb no terminal: ``` mongo ```
