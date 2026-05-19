@@ -2,84 +2,128 @@
 
 ### Anotações:
 
-Comando antigo para rodar mongodb no terminal :mongo
-Comando novo para terminal : mongosh
+Comando antigo para rodar mongodb no terminal: ``` mongo ```
+
+
+Comando novo para terminal : ``` mongosh ```
+
 
 • Para criar banco de dados:
-use pessoasData
+
+``` use pessoasData ```
+
 
 • Para ver os bancos:
-show dbs
+
+``` show dbs ```
+
 
 • Obs o banco não é criado até inserir dados nele
 
+
 • O mongodb não tabelas , tem colletions
 
+
 • Para criar collections:
-db.pessoas.insertOne({ nome: "Matheus" , idade: 30, profisssão: "Programador", esta_empregado: true })
+
+``` db.pessoas.insertOne({ nome: "Matheus" , idade: 30, profisssão: "Programador", esta_empregado: true }) ```
+
 
 • o objectID do mongodb é como se fosse a primary key de um banco relacional
+
 • acknowledged confirma se foi criado
 
+
 • Para ver as coleções:
-show collections
+
+``` show collections ```
+
 
 • Inserção de multiplos dados (1 ou +):
-db.pessoas.insertMany([
+
+``` db.pessoas.insertMany([
   { nome: "João", idade: 43, profissao: "Arquiteto", esta_empregado: false },
   { nome: "Maria", idade: 23, profissao: "Professora", esta_empregado: true}
 ])
+```
+
 
 • Para verificação de todos os dados na collection:
-db.pessoas.find()
 
-db.pessoas.find().pretty()
+``` db.pessoas.find() ```
+
+``` db.pessoas.find().pretty() ```
+
 
 • Visualização com filtro:
-db.pessoas.find({ esta_empregado: true })
+
+``` db.pessoas.find({ esta_empregado: true }) ```
+
 
 • Contagem de dados:
-db.pessoas.find({ esta_empregado: true }).count()
 
-db.pessoas.find().count()
+``` db.pessoas.find({ esta_empregado: true }).count() ```
+
+``` db.pessoas.find().count() ```
+
 
 • Retorna apenas um dado:
-db.pessoas.findOne()
 
-db.pessoas.findOne({ nome: "Jõao" })
+``` db.pessoas.findOne() ```
+
+``` db.pessoas.findOne({ nome: "Jõao" }) ```
+
 
 • Atualizar apenas 1:
-db.pessoas.updateOne({ nome: "João" }, { $set: { esta_empregado: true } })
+
+``` db.pessoas.updateOne({ nome: "João" }, { $set: { esta_empregado: true } }) ```
+
 
 • matchedCount são a quantidades de dados encontrados que ele alterou
 
 • É possivel acrescentar uma nova chave usando o upate  (ele não serve apenas para alterar valores)
 
 • Atualizar varios dados (1 ou +):
-db.pessoas.updateMany({}, {$set: { salario: 5000 })
+
+``` db.pessoas.updateMany({}, {$set: { salario: 5000 })```
+
 
 • Para remover 1 dado:
-db.pessoas.deleteOne({ nome: "Matheus" })
+
+``` db.pessoas.deleteOne({ nome: "Matheus" }) ```
+
 
 • deletedCount indica a quantidade de dados deletados
 
 • Para deletar varios dados (1 ou +):
-db.pessoas.deleteMany({ name: "Josias"})
+
+``` db.pessoas.deleteMany({ name: "Josias"}) ```
+
 
 • Operadores:
 - Maior que algo:
-db.pesssoas.find( { idade { $gt: 30 } })
+
+``` db.pesssoas.find( { idade { $gt: 30 } }) ```
+
 - Maior ou igual:
-db.pesssoas.find( { idade { $gte: 30 } })
+
+``` db.pesssoas.find( { idade { $gte: 30 } }) ```
+
 - Menor que:
-db.pesssoas.find( { idade { $lt: 30 } })
+
+``` db.pesssoas.find( { idade { $lt: 30 } }) ```
+
 - Menor ou igual a:
-db.pesssoas.find( { idade { $lte: 30 } })
+
+``` db.pesssoas.find( { idade { $lte: 30 } }) ```
+
 
 • Usando operadores para fazer update especifico:
-db.pessoas.updateMany({ idate: { $gt: 35}, { $set: {prioridade: True})
+
+``` db.pessoas.updateMany({ idate: { $gt: 35}, { $set: {prioridade: True}) ```
 
 • Tipos de dados disponiveis:
+```
 db.pessoas.insertOne({
   nome: "Paula",
   idade: 44,
@@ -92,27 +136,44 @@ db.pessoas.insertOne({
     perfil: "Extrovertida"
   }
 })
+```
+
 - string, number, array,booleano, data, document, number(float) 
 - Para variar tipos de dados geralmente o document é a melhor opção, quando queremos uma lista de um tipo de dado unico geralmente o array é melhor opção 
 
+
 • Operadores exclusivos do update:
 - Incremento (inc, serve para valores positivos e negativos):
-db.pessoas.updateOne({ nome: "Maria" }, { $inc: { salario: 1000 } }
+  
+``` db.pessoas.updateOne({ nome: "Maria" }, { $inc: { salario: 1000 } } ```
+
 
 • Criar Indice:
-db.pessoas.createIndex({ "nome" })
+
+``` db.pessoas.createIndex({ "nome" }) ```
+
 
 • Como atestar que tem o indice realmente criado:
-db.pessoas.detIndexes()
+
+``` db.pessoas.detIndexes() ```
+
 
 • Como saber se o mongodb está usando o indice:
-db.pessoas.explain().find({ nome: "João" })
+
+``` db.pessoas.explain().find({ nome: "João" }) ```
+
 
 • Como remover indice:
-db.pessoas.dropIndex("nome_1")
+
+``` db.pessoas.dropIndex("nome_1") ```
+
 
 • Deletar collection:
-db.pessoas.drop()
+
+``` db.pessoas.drop() ```
+
 
 • Para deletar o banco:
-db.dropDatabase()
+
+``` db.dropDatabase() ```
+
