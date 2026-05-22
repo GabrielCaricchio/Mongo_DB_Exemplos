@@ -53,7 +53,8 @@ Comando novo para terminal : ``` mongosh ```
 
 • Inserção de multiplos dados (1 ou +):
 
-``` db.pessoas.insertMany([
+```
+db.pessoas.insertMany([
   { nome: "João", idade: 43, profissao: "Arquiteto", esta_empregado: false },
   { nome: "Maria", idade: 23, profissao: "Professora", esta_empregado: true}
 ])
