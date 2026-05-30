@@ -1,4 +1,4 @@
-# Aula de mongodb:  https://youtu.be/x9tC0eK0GtA?si=l9z_Oe_v-4WvZNdr
+# Recomendação de aula para revisão de mongodb:  https://youtu.be/x9tC0eK0GtA?si=l9z_Oe_v-4WvZNdr
 
 #### Servidor mongodb: https://www.mongodb.com/try/download/community
 #### Acesso para o terminal para mongodb (precisa do servidor mongodb instalado): https://www.mongodb.com/try/download/shell
