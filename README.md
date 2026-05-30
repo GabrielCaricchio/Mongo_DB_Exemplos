@@ -111,7 +111,7 @@ db.pessoas.insertMany([
 
 • matchedCount são a quantidades de dados encontrados que ele alterou
 
-• É possivel acrescentar uma nova chave usando o upate  (ele não serve apenas para alterar valores)
+• É possivel acrescentar uma nova chave usando o update  (ele não serve apenas para alterar valores)
 
 • Atualizar varios dados (1 ou +):
 
