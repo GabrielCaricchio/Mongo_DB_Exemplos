@@ -1,8 +1,22 @@
-# Recomendação de aula para revisão de mongodb:  https://youtu.be/x9tC0eK0GtA?si=l9z_Oe_v-4WvZNdr
+# Estudos de mongodb
 
-#### Servidor mongodb: https://www.mongodb.com/try/download/community
-#### Acesso para o terminal para mongodb (precisa do servidor mongodb instalado): https://www.mongodb.com/try/download/shell
-#### Interface grafica para mongodb (precisa do servidor mongodb instalado): https://www.mongodb.com/products/tools/compass
+#### Recomendação de aula para revisão de mongodb:  
+https://youtu.be/x9tC0eK0GtA?si=l9z_Oe_v-4WvZNdr
+
+---
+
+#### Servidor mongodb: 
+https://www.mongodb.com/try/download/community
+
+<br>
+
+#### Acesso para o terminal para mongodb (precisa do servidor mongodb instalado): 
+https://www.mongodb.com/try/download/shell
+
+<br>
+
+#### Interface grafica para mongodb (precisa do servidor mongodb instalado): 
+https://www.mongodb.com/products/tools/compass
 
 ---
 
@@ -10,7 +24,8 @@ Site 1 com cheat seets: https://quickref.me/mongodb
 
 Site 2 com cheat seets: https://cheatsheets.zip/mongodb
 
-Site para treino de mongodb (para quem quiser treinar mongodb sem precisar instalar no computador): https://www.mycompiler.io/pt/new/mongodb
+##### Site para treino de mongodb (para quem quiser treinar mongodb sem precisar instalar no computador): 
+https://www.mycompiler.io/pt/new/mongodb
 
 ---
 
