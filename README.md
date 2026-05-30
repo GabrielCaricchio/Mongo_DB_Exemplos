@@ -10,6 +10,8 @@ Site 1 com cheat seets: https://quickref.me/mongodb
 
 Site 2 com cheat seets: https://cheatsheets.zip/mongodb
 
+Site para treino de mongodb (para quem quiser treinar mongo sem precisar instalar no computador): https://www.mycompiler.io/pt/new/mongodb
+
 ---
 
 ### Anotações:
